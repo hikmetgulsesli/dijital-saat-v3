@@ -83,13 +83,13 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #93c5fd;
+  color: var(--color-primary);
 }
 
 .settings-button {
   background: transparent;
   border: none;
-  color: #64748b;
+  color: var(--color-secondary);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -100,7 +100,7 @@ body {
 }
 
 .settings-button:hover {
-  color: #93c5fd;
+  color: var(--color-primary);
   transform: scale(0.95);
 }
 
@@ -274,20 +274,20 @@ body {
   border-radius: 9999px;
   background: transparent;
   border: none;
-  color: #64748b;
+  color: var(--color-secondary);
   cursor: pointer;
   transition: all 0.2s;
   font-family: var(--font-body);
 }
 
 .nav-item:hover {
-  background: rgba(30, 41, 59, 0.5);
-  color: #93c5fd;
+  background: var(--color-surface-container);
+  color: var(--color-primary);
 }
 
 .nav-item.active {
-  background: rgba(30, 58, 138, 0.3);
-  color: #93c5fd;
+  background: var(--color-surface-container-high);
+  color: var(--color-primary);
 }
 
 .nav-item .material-symbols-outlined {
