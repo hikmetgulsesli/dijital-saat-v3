@@ -1,9 +1,9 @@
-import { describe, it, expect, test } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { test, expect } from 'vitest'
+import { render } from '@testing-library/react'
 import App from './App'
 
 test('App renders time display', () => {
   render(<App />)
-  const container = document.querySelector('.container')
-  expect(container).not.toBeNull()
+  const app = document.querySelector('.app')
+  expect(app).not.toBeNull()
 })
