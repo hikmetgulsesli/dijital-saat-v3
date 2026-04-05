@@ -1,0 +1,528 @@
+{
+  "generatedAt": "2026-04-05T17:38:30.406Z",
+  "screenCount": 3,
+  "screens": {
+    "3836fed07a36461e9303981058e13dd6": {
+      "screenId": "3836fed07a36461e9303981058e13dd6",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-8",
+            "py-6",
+            "bg-transparent",
+            "docked",
+            "full-width",
+            "top-0"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "relative",
+            "overflow-hidden",
+            "px-6"
+          ],
+          "childCount": 11
+        },
+        {
+          "tag": "nav",
+          "classes": [
+            "md:hidden",
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-center",
+            "space-x-12",
+            "pb-8"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "label": "settings",
+          "classes": [
+            "text-slate-500",
+            "hover:text-blue-200",
+            "transition-colors",
+            "scale-95",
+            "duration-200"
+          ],
+          "icon": "settings",
+          "action": "click-action",
+          "expectedRoute": "#"
+        },
+        {
+          "label": "settings",
+          "classes": [],
+          "icon": "settings",
+          "action": "click-action",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Dijital",
+          "href": "#",
+          "classes": [
+            "text-blue-300",
+            "font-bold",
+            "hover:text-blue-200",
+            "transition-colors"
+          ],
+          "icon": null
+        },
+        {
+          "label": "Analog",
+          "href": "#",
+          "classes": [
+            "text-slate-500",
+            "hover:text-blue-200",
+            "transition-colors"
+          ],
+          "icon": null
+        },
+        {
+          "label": "schedule\nDijital",
+          "href": "#",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "bg-blue-900/30",
+            "text-blue-300",
+            "rounded-full",
+            "px-6",
+            "py-2",
+            "scale-98",
+            "duration-150",
+            "ease-in-out"
+          ],
+          "icon": "schedule"
+        },
+        {
+          "label": "watch_later\nAnalog",
+          "href": "#",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "text-slate-500",
+            "px-6",
+            "py-2",
+            "hover:bg-slate-800/50",
+            "transition-all"
+          ],
+          "icon": "watch_later"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "settings",
+        "location_on",
+        "alarm",
+        "schedule",
+        "watch_later",
+        "notifications_active"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuADS5iGnUy9vOIwUkdOVld02DhhPY0yNqZ1JwrjmuZ8K9B9mGA03tuj22popbqQGC-zKPasoirj0xqAyFv0h3DgzEyBpvdhdOWxAQHMljy4k7h8lh4ASoU-m2YpDhdKjEVE9LEszVm5HZF7NZClYM",
+          "alt": ""
+        }
+      ],
+      "cssVars": {},
+      "fonts": [
+        "Inter",
+        "Manrope",
+        "Space Grotesk",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "tabBar": [
+        {
+          "label": "MIDNIGHT",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "Dijital",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "Analog",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "settings",
+          "icon": "settings",
+          "active": false
+        },
+        {
+          "label": "Dijital",
+          "icon": "schedule",
+          "active": false
+        },
+        {
+          "label": "Analog",
+          "icon": "watch_later",
+          "active": false
+        }
+      ],
+      "title": "Dijital Saat"
+    },
+    "5ef504ca143e48eaa15cc7c781a13dd4": {
+      "screenId": "5ef504ca143e48eaa15cc7c781a13dd4",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-8",
+            "py-6",
+            "bg-transparent",
+            "font-['Space_Grotesk']",
+            "text-on-surface",
+            "docked"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "max-w-2xl",
+            "mx-auto",
+            "px-6",
+            "pt-8",
+            "pb-32"
+          ],
+          "childCount": 20
+        },
+        {
+          "tag": "nav",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-center",
+            "space-x-12",
+            "pb-8",
+            "pt-4"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "label": "arrow_back_ios",
+          "classes": [
+            "hover:text-blue-200",
+            "transition-colors",
+            "scale-95",
+            "duration-200"
+          ],
+          "icon": "arrow_back_ios",
+          "action": "click-action"
+        },
+        {
+          "label": "KAYDET",
+          "classes": [
+            "bg-primary",
+            "hover:bg-primary-dim",
+            "text-on-primary",
+            "font-headline",
+            "font-bold",
+            "px-6",
+            "py-3",
+            "rounded-full",
+            "transition-all",
+            "duration-200",
+            "active:scale-95",
+            "shadow-[0_0_20px_rgba(123,208,255,0.2)]"
+          ],
+          "icon": null,
+          "action": "form-submit"
+        },
+        {
+          "label": "refresh\n                Varsayılan Ayarlara Dön",
+          "classes": [
+            "font-label",
+            "text-sm",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-2",
+            "mx-auto"
+          ],
+          "icon": "refresh",
+          "action": "search"
+        },
+        {
+          "label": "arrow_back_ios",
+          "classes": [],
+          "icon": "arrow_back_ios",
+          "action": "click-action"
+        },
+        {
+          "label": "settings",
+          "classes": [],
+          "icon": "settings",
+          "action": "click-action",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "label": "dark_mode",
+          "classes": [],
+          "icon": "dark_mode",
+          "action": "click-action"
+        },
+        {
+          "label": "refresh",
+          "classes": [],
+          "icon": "refresh",
+          "action": "click-action"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "sr-only",
+            "peer"
+          ]
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "arrow_back_ios",
+        "settings",
+        "schedule",
+        "dark_mode",
+        "database",
+        "refresh",
+        "watch_later"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA_pOgRPKqlqZG-uYElEv8Kf7sStpJjWuttENyRdxUkl15X2VSekV9UFXHHVvvZfTUMj-TjAS7dQujVcKkjr1SosnTnj028CtZEJRImrT74IHBCx7qEzsIjtjk3U5QPgXQGZc2iYtcSQmlfWiAVok",
+          "alt": "Abstract blue time representation"
+        }
+      ],
+      "cssVars": {},
+      "fonts": [
+        "Space Grotesk",
+        "Manrope",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "tabBar": [
+        {
+          "label": "Dijital",
+          "icon": "schedule",
+          "active": false
+        },
+        {
+          "label": "Analog",
+          "icon": "watch_later",
+          "active": false
+        }
+      ],
+      "title": "Ayarlar"
+    },
+    "7635ed3bd3e54f4aa1fdc5e99956f86c": {
+      "screenId": "7635ed3bd3e54f4aa1fdc5e99956f86c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "classes": [
+            "bg-transparent",
+            "docked",
+            "full-width",
+            "top-0",
+            "z-40"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "px-6",
+            "relative"
+          ],
+          "childCount": 30
+        },
+        {
+          "tag": "nav",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-center",
+            "space-x-12",
+            "pb-8",
+            "pt-4"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "label": "settings",
+          "classes": [
+            "text-slate-500",
+            "hover:text-blue-200",
+            "transition-colors",
+            "scale-95",
+            "duration-200"
+          ],
+          "icon": "settings",
+          "action": "click-action",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "label": "settings",
+          "classes": [],
+          "icon": "settings",
+          "action": "click-action",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "schedule\nDijital",
+          "href": "#",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "text-slate-500",
+            "px-6",
+            "py-2",
+            "hover:bg-slate-800/50",
+            "scale-98",
+            "duration-150",
+            "ease-in-out"
+          ],
+          "icon": "schedule"
+        },
+        {
+          "label": "watch_later\nAnalog",
+          "href": "#",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "bg-blue-900/30",
+            "text-blue-300",
+            "rounded-full",
+            "px-6",
+            "py-2",
+            "scale-98",
+            "duration-150",
+            "ease-in-out"
+          ],
+          "icon": "watch_later"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "settings",
+        "public",
+        "schedule",
+        "watch_later"
+      ],
+      "images": [],
+      "cssVars": {},
+      "fonts": [
+        "Space Grotesk",
+        "Manrope",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "tabBar": [
+        {
+          "label": "MIDNIGHT",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "settings",
+          "icon": "settings",
+          "active": false
+        },
+        {
+          "label": "Dijital",
+          "icon": "schedule",
+          "active": false
+        },
+        {
+          "label": "Analog",
+          "icon": "watch_later",
+          "active": false
+        }
+      ],
+      "title": "Analog Saat"
+    }
+  }
+}

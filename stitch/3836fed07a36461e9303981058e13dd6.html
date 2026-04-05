@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ff9993",
+                    "background": "#070d1f",
+                    "secondary-fixed-dim": "#d4d4db",
+                    "surface-container-lowest": "#000000",
+                    "error-dim": "#bb5551",
+                    "primary-fixed-dim": "#a2dcff",
+                    "on-error": "#490106",
+                    "secondary-fixed": "#e2e2e9",
+                    "on-secondary-container": "#bebfc5",
+                    "on-primary-fixed-variant": "#006286",
+                    "on-primary": "#004560",
+                    "primary-dim": "#47c4ff",
+                    "tertiary-dim": "#c5c0e0",
+                    "surface-variant": "#0a2257",
+                    "surface-tint": "#7bd0ff",
+                    "inverse-primary": "#00668b",
+                    "tertiary-container": "#d3ceef",
+                    "on-secondary": "#1e2025",
+                    "outline-variant": "#32457c",
+                    "on-tertiary-fixed": "#34314b",
+                    "inverse-on-surface": "#4f5469",
+                    "surface-container-high": "#0b1d48",
+                    "tertiary-fixed-dim": "#c5c0e0",
+                    "tertiary-fixed": "#d3ceef",
+                    "on-tertiary": "#504d68",
+                    "on-background": "#dfe4ff",
+                    "primary": "#7bd0ff",
+                    "primary-fixed": "#c4e7ff",
+                    "surface-container": "#0a1839",
+                    "secondary-dim": "#9d9da4",
+                    "surface-container-low": "#09122b",
+                    "surface-bright": "#082768",
+                    "secondary-container": "#3a3b41",
+                    "on-secondary-fixed": "#3e3f45",
+                    "on-secondary-fixed-variant": "#5a5b61",
+                    "on-tertiary-fixed-variant": "#504e69",
+                    "error-container": "#7f2927",
+                    "on-surface-variant": "#96a9e6",
+                    "on-primary-container": "#97d8ff",
+                    "primary-container": "#004c69",
+                    "error": "#ee7d77",
+                    "surface": "#070d1f",
+                    "surface-dim": "#070d1f",
+                    "on-tertiary-container": "#47445f",
+                    "secondary": "#9d9da4",
+                    "surface-container-highest": "#0a2257",
+                    "tertiary": "#e1dcfd",
+                    "outline": "#6073ad",
+                    "on-surface": "#dfe4ff",
+                    "on-primary-fixed": "#00445e",
+                    "inverse-surface": "#faf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #070d1f; /* Slate-950 / Background override */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center w-full px-8 py-6 bg-transparent docked full-width top-0 z-50">
+<div class="text-xl font-bold tracking-widest text-blue-300 dark:text-blue-400 font-['Space_Grotesk']">
+            MIDNIGHT
+        </div>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] text-on-surface">
+<a class="text-blue-300 font-bold hover:text-blue-200 transition-colors" href="#">Dijital</a>
+<a class="text-slate-500 hover:text-blue-200 transition-colors" href="#">Analog</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-blue-200 transition-colors scale-95 duration-200">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</nav>
+<!-- Main Content: Temporal Monolith Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center relative overflow-hidden px-6">
+<!-- Background Ambient Pulse -->
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container via-transparent to-transparent"></div>
+<!-- The Master Clock -->
+<div class="relative z-10 flex flex-col items-center justify-center text-center">
+<!-- Large Display -->
+<div class="flex items-baseline justify-center font-headline font-medium tracking-tighter leading-none text-[clamp(5rem,20vw,16rem)] text-on-surface">
+<span>14</span>
+<span class="opacity-50 mx-2 animate-pulse">:</span>
+<span>25</span>
+<span class="text-[clamp(1.5rem,5vw,4rem)] opacity-40 ml-4 font-light">06</span>
+</div>
+<!-- Date Display -->
+<div class="mt-8">
+<span class="font-headline text-secondary tracking-[0.2em] text-lg md:text-2xl font-light uppercase">
+                    22 Mayıs 2026
+                </span>
+</div>
+<!-- Secondary Info (Location/Status) -->
+<div class="mt-12 flex items-center gap-6 px-6 py-3 rounded-full bg-surface-container-low backdrop-blur-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="font-label text-xs font-medium text-on-surface-variant tracking-wide">İSTANBUL</span>
+</div>
+<div class="w-px h-4 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">alarm</span>
+<span class="font-label text-xs font-medium text-on-surface-variant tracking-wide">07:30</span>
+</div>
+</div>
+</div>
+<!-- Asymmetric Detail: Ambient Image/Texture -->
+<div class="absolute bottom-32 right-12 hidden lg:block opacity-40 hover:opacity-80 transition-opacity duration-700">
+<div class="w-64 h-80 rounded-2xl overflow-hidden bg-surface-container-high relative">
+<img alt="" class="w-full h-full object-cover mix-blend-luminosity" data-alt="dramatic close-up of a high-end luxury mechanical watch movement with intricate silver gears and deep blue shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADS5iGnUy9vOIwUkdOVld02DhhPY0yNqZ1JwrjmuZ8K9B9mGA03tuj22popbqQGC-zKPasoirj0xqAyFv0h3DgzEyBpvdhdOWxAQHMljy4k7h8lh4ASoU-m2YpDhdKjEVE9LEszVm5HZF7NZClYMn6RZbHUwcY-mH7M5c57hg0YK6GuCCnj6-FCbLtZDLY4saB4IQm5SJShFrLYF0YLnFC7dLAYKyNQ7BlN2mgch5buxEMKhMNs5WAcsNOXNm_iOwcaQqD9mOSFFo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-center space-x-12 pb-8 pt-4 bg-slate-950/80 backdrop-blur-xl shadow-[0_-8px_30px_rgb(59,130,246,0.1)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center bg-blue-900/30 text-blue-300 rounded-full px-6 py-2 scale-98 duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="font-['Manrope'] text-[12px] font-medium mt-1">Dijital</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-6 py-2 hover:bg-slate-800/50 transition-all" href="#">
+<span class="material-symbols-outlined">watch_later</span>
+<span class="font-['Manrope'] text-[12px] font-medium mt-1">Analog</span>
+</a>
+</nav>
+<!-- Contextual Element: Next Alarm Hint -->
+<div class="fixed bottom-12 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-12 z-40">
+<div class="flex items-center gap-4 bg-surface-container-highest/60 backdrop-blur-xl p-4 rounded-3xl border border-outline-variant/10">
+<div class="bg-primary/20 p-2 rounded-xl">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+</div>
+<div>
+<p class="font-label text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Sıradaki Alarm</p>
+<p class="font-headline text-lg text-on-surface">Pazartesi, 07:30</p>
+</div>
+</div>
+</div>
+</body></html>

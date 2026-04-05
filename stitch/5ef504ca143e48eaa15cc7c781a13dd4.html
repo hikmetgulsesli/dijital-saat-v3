@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIDNIGHT - Ayarlar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ff9993",
+                    "background": "#070d1f",
+                    "secondary-fixed-dim": "#d4d4db",
+                    "surface-container-lowest": "#000000",
+                    "error-dim": "#bb5551",
+                    "primary-fixed-dim": "#a2dcff",
+                    "on-error": "#490106",
+                    "secondary-fixed": "#e2e2e9",
+                    "on-secondary-container": "#bebfc5",
+                    "on-primary-fixed-variant": "#006286",
+                    "on-primary": "#004560",
+                    "primary-dim": "#47c4ff",
+                    "tertiary-dim": "#c5c0e0",
+                    "surface-variant": "#0a2257",
+                    "surface-tint": "#7bd0ff",
+                    "inverse-primary": "#00668b",
+                    "tertiary-container": "#d3ceef",
+                    "on-secondary": "#1e2025",
+                    "outline-variant": "#32457c",
+                    "on-tertiary-fixed": "#34314b",
+                    "inverse-on-surface": "#4f5469",
+                    "surface-container-high": "#0b1d48",
+                    "tertiary-fixed-dim": "#c5c0e0",
+                    "tertiary-fixed": "#d3ceef",
+                    "on-tertiary": "#504d68",
+                    "on-background": "#dfe4ff",
+                    "primary": "#7bd0ff",
+                    "primary-fixed": "#c4e7ff",
+                    "surface-container": "#0a1839",
+                    "secondary-dim": "#9d9da4",
+                    "surface-container-low": "#09122b",
+                    "surface-bright": "#082768",
+                    "secondary-container": "#3a3b41",
+                    "on-secondary-fixed": "#3e3f45",
+                    "on-secondary-fixed-variant": "#5a5b61",
+                    "on-tertiary-fixed-variant": "#504e69",
+                    "error-container": "#7f2927",
+                    "on-surface-variant": "#96a9e6",
+                    "on-primary-container": "#97d8ff",
+                    "primary-container": "#004c69",
+                    "error": "#ee7d77",
+                    "surface": "#070d1f",
+                    "surface-dim": "#070d1f",
+                    "on-tertiary-container": "#47445f",
+                    "secondary": "#9d9da4",
+                    "surface-container-highest": "#0a2257",
+                    "tertiary": "#e1dcfd",
+                    "outline": "#6073ad",
+                    "on-surface": "#dfe4ff",
+                    "on-primary-fixed": "#00445e",
+                    "inverse-surface": "#faf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Space Grotesk"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #070d1f;
+            color: #dfe4ff;
+            font-family: 'Manrope', sans-serif;
+        }
+        .temporal-glow {
+            background: radial-gradient(circle at top right, rgba(123, 208, 255, 0.08), transparent 40%);
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden temporal-glow selection:bg-primary/30">
+<!-- TopNavBar Implementation -->
+<header class="flex justify-between items-center w-full px-8 py-6 bg-transparent font-['Space_Grotesk'] text-on-surface docked full-width top-0">
+<div class="flex items-center gap-4">
+<button class="hover:text-blue-200 transition-colors scale-95 duration-200">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios</span>
+</button>
+<h1 class="text-xl font-bold tracking-widest text-blue-300 dark:text-blue-400">MIDNIGHT</h1>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-slate-500 hover:text-blue-200 transition-colors">settings</span>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-8 pb-32">
+<!-- Editorial Header Section -->
+<section class="mb-12">
+<h2 class="font-headline text-5xl font-bold text-on-surface mb-2 tracking-tight">Ayarlar</h2>
+<p class="font-body text-on-surface-variant/80 text-lg">Zamanın nasıl görüneceğine sen karar ver.</p>
+</section>
+<!-- Bento Grid Styled Settings -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Appearance Toggle Card -->
+<div class="bg-surface-container-low rounded-[2rem] p-8 flex items-center justify-between transition-all duration-300 hover:bg-surface-container-high border border-outline-variant/10">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-semibold text-on-surface">Analog/Dijital Görünüm</h3>
+<p class="font-body text-sm text-on-surface-variant">Saat arayüzünü değiştirin</p>
+</div>
+</div>
+<!-- Custom Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-14 h-8 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-on-surface after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Theme Info Card -->
+<div class="bg-surface-container-low rounded-[2rem] p-8 transition-all duration-300 hover:bg-surface-container-high border border-outline-variant/10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">dark_mode</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-semibold text-on-surface">Koyu Tema</h3>
+<p class="font-body text-sm text-on-surface-variant">Sistem varsayılanı: Slate-950</p>
+</div>
+</div>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-primary-fixed-dim font-label text-xs font-bold tracking-wider uppercase">AKTİF</span>
+</div>
+</div>
+<!-- Data Storage Card -->
+<div class="bg-surface-container-low rounded-[2rem] p-8 flex items-center justify-between transition-all duration-300 hover:bg-surface-container-high border border-outline-variant/10">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-dim">
+<span class="material-symbols-outlined text-3xl">database</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-semibold text-on-surface">Yerel Depolama</h3>
+<p class="font-body text-sm text-on-surface-variant">Ayarları localStorage'da sakla</p>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary-dim text-on-primary font-headline font-bold px-6 py-3 rounded-full transition-all duration-200 active:scale-95 shadow-[0_0_20px_rgba(123,208,255,0.2)]">
+                    KAYDET
+                </button>
+</div>
+<!-- Visual Asset - Abstract Representation -->
+<div class="mt-8 relative h-48 w-full rounded-[2.5rem] overflow-hidden group">
+<img alt="Abstract blue time representation" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="abstract fluid silk texture in deep midnight blue and cyan tones with soft cinematic lighting and bokeh effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_pOgRPKqlqZG-uYElEv8Kf7sStpJjWuttENyRdxUkl15X2VSekV9UFXHHVvvZfTUMj-TjAS7dQujVcKkjr1SosnTnj028CtZEJRImrT74IHBCx7qEzsIjtjk3U5QPgXQGZc2iYtcSQmlfWiAVokc-JpuQycqDJ7tPvb7nfDkBX8sacyWLqVOMObv7yNlO_CZPpVowdI_aREFGvxJJXQUcO4KVonV1gaP_3rL9-yPbNz-uK1oZqQHwHeqY8uljdBnqsU-a0uniDbM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-8">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary-dim">Midnight Chronometer</span>
+<p class="font-headline text-xl font-medium mt-1">Sürüm 2.4.0-Alpha</p>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="mt-12 text-center">
+<button class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 mx-auto">
+<span class="material-symbols-outlined text-base">refresh</span>
+                Varsayılan Ayarlara Dön
+            </button>
+</div>
+</main>
+<!-- BottomNavBar Implementation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-center space-x-12 pb-8 pt-4 bg-slate-950/80 backdrop-blur-xl shadow-[0_-8px_30px_rgb(59,130,246,0.1)] rounded-t-3xl">
+<!-- Navigation is suppressed on focused Settings page per "Shell Visibility" mandate, but included here for shell integrity mapping -->
+<div class="flex flex-col items-center justify-center text-slate-500 px-6 py-2 hover:bg-slate-800/50 scale-98 duration-150 ease-in-out cursor-pointer group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:text-blue-300">schedule</span>
+<span class="font-['Manrope'] text-[12px] font-medium uppercase tracking-wider">Dijital</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-6 py-2 hover:bg-slate-800/50 scale-98 duration-150 ease-in-out cursor-pointer group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:text-blue-300">watch_later</span>
+<span class="font-['Manrope'] text-[12px] font-medium uppercase tracking-wider">Analog</span>
+</div>
+</nav>
+<!-- Visual Hint: Active state is not on nav because we are in settings sub-page -->
+</body></html>
