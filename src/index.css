@@ -1,0 +1,25 @@
+@import '../stitch/design-tokens.css';
+@import './tokens.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body, 'Space Grotesk', sans-serif);
+  background: var(--color-bg, #020617);
+  color: var(--color-text, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

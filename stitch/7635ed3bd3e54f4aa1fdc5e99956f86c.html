@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ff9993",
+                    "background": "#070d1f",
+                    "secondary-fixed-dim": "#d4d4db",
+                    "surface-container-lowest": "#000000",
+                    "error-dim": "#bb5551",
+                    "primary-fixed-dim": "#a2dcff",
+                    "on-error": "#490106",
+                    "secondary-fixed": "#e2e2e9",
+                    "on-secondary-container": "#bebfc5",
+                    "on-primary-fixed-variant": "#006286",
+                    "on-primary": "#004560",
+                    "primary-dim": "#47c4ff",
+                    "tertiary-dim": "#c5c0e0",
+                    "surface-variant": "#0a2257",
+                    "surface-tint": "#7bd0ff",
+                    "inverse-primary": "#00668b",
+                    "tertiary-container": "#d3ceef",
+                    "on-secondary": "#1e2025",
+                    "outline-variant": "#32457c",
+                    "on-tertiary-fixed": "#34314b",
+                    "inverse-on-surface": "#4f5469",
+                    "surface-container-high": "#0b1d48",
+                    "tertiary-fixed-dim": "#c5c0e0",
+                    "tertiary-fixed": "#d3ceef",
+                    "on-tertiary": "#504d68",
+                    "on-background": "#dfe4ff",
+                    "primary": "#7bd0ff",
+                    "primary-fixed": "#c4e7ff",
+                    "surface-container": "#0a1839",
+                    "secondary-dim": "#9d9da4",
+                    "surface-container-low": "#09122b",
+                    "surface-bright": "#082768",
+                    "secondary-container": "#3a3b41",
+                    "on-secondary-fixed": "#3e3f45",
+                    "on-secondary-fixed-variant": "#5a5b61",
+                    "on-tertiary-fixed-variant": "#504e69",
+                    "error-container": "#7f2927",
+                    "on-surface-variant": "#96a9e6",
+                    "on-primary-container": "#97d8ff",
+                    "primary-container": "#004c69",
+                    "error": "#ee7d77",
+                    "surface": "#070d1f",
+                    "surface-dim": "#070d1f",
+                    "on-tertiary-container": "#47445f",
+                    "secondary": "#9d9da4",
+                    "surface-container-highest": "#0a2257",
+                    "tertiary": "#e1dcfd",
+                    "outline": "#6073ad",
+                    "on-surface": "#dfe4ff",
+                    "on-primary-fixed": "#00445e",
+                    "inverse-surface": "#faf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .analog-shadow {
+            filter: drop-shadow(0 0 12px rgba(123, 208, 255, 0.15));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-transparent docked full-width top-0 z-40">
+<nav class="flex justify-between items-center w-full px-8 py-6">
+<div class="text-xl font-bold tracking-widest text-blue-300 dark:text-blue-400 font-['Space_Grotesk']">
+                MIDNIGHT
+            </div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-blue-200 transition-colors scale-95 duration-200">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Main Content: The Temporal Monolith -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 relative">
+<!-- Background Ambient Glow -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-primary-container/20 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-[10%] -right-[10%] w-[30%] h-[30%] bg-surface-variant/30 blur-[100px] rounded-full"></div>
+</div>
+<!-- Clock Stage -->
+<section class="relative z-10 w-full max-w-md flex flex-col items-center">
+<!-- Analog Clock SVG -->
+<div class="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center rounded-full bg-surface-container-low analog-shadow mb-12">
+<!-- Clock Face -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 400 400">
+<!-- Outer Ring -->
+<circle class="text-outline-variant/30" cx="200" cy="200" fill="none" r="190" stroke="currentColor" stroke-width="0.5"></circle>
+<!-- Minute/Hour Ticks -->
+<g class="text-outline-variant/40">
+<line stroke="currentColor" stroke-width="2" x1="370" x2="385" y1="200" y2="200"></line>
+<line stroke="currentColor" stroke-width="2" x1="30" x2="15" y1="200" y2="200"></line>
+<line stroke="currentColor" stroke-width="2" x1="200" x2="200" y1="370" y2="385"></line>
+<line stroke="currentColor" stroke-width="2" x1="200" x2="200" y1="30" y2="15"></line>
+<!-- 30 Degree Ticks -->
+<line stroke="currentColor" stroke-width="1" transform="rotate(30 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(60 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(120 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(150 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(210 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(240 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(300 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(330 200 200)" x1="285" x2="292.5" y1="52.6" y2="39.6"></line>
+</g>
+<!-- Hour Hand -->
+<line class="text-on-surface" stroke="currentColor" stroke-linecap="round" stroke-width="6" transform="rotate(215 200 200)" x1="200" x2="280" y1="200" y2="200"></line>
+<!-- Minute Hand -->
+<line class="text-on-surface-variant" stroke="currentColor" stroke-linecap="round" stroke-width="4" transform="rotate(10 200 200)" x1="200" x2="330" y1="200" y2="200"></line>
+<!-- Second Hand -->
+<g transform="rotate(85 200 200)">
+<line class="text-primary" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" x1="200" x2="355" y1="200" y2="200"></line>
+<circle class="text-primary" cx="200" cy="200" fill="currentColor" r="4"></circle>
+<!-- Tail of second hand -->
+<line class="text-primary" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" x1="200" x2="160" y1="200" y2="200"></line>
+</g>
+<!-- Center Dot -->
+<circle class="text-on-surface" cx="200" cy="200" fill="currentColor" r="6"></circle>
+</svg>
+<!-- Digital Time Overlay (Small) -->
+<div class="absolute bottom-16 left-1/2 -translate-x-1/2">
+<span class="text-primary/60 font-headline font-medium tracking-widest text-sm">19:05</span>
+</div>
+</div>
+<!-- Date Display -->
+<div class="text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-2">22 Mayıs 2026</h2>
+<p class="text-secondary font-body tracking-[0.2em] uppercase text-sm">Cuma</p>
+</div>
+</section>
+<!-- World Time Bento Fragment -->
+<section class="mt-16 w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 pb-32">
+<div class="bg-surface-container-low p-6 rounded-3xl flex justify-between items-center group hover:bg-surface-container transition-colors duration-300">
+<div>
+<p class="text-secondary text-xs font-label mb-1">Londra</p>
+<p class="text-2xl font-headline font-semibold text-on-surface">17:05</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">public</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-3xl flex justify-between items-center group hover:bg-surface-container transition-colors duration-300">
+<div>
+<p class="text-secondary text-xs font-label mb-1">New York</p>
+<p class="text-2xl font-headline font-semibold text-on-surface">12:05</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">public</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-center space-x-12 pb-8 pt-4 bg-slate-950/80 backdrop-blur-xl rounded-t-3xl shadow-[0_-8px_30px_rgb(59,130,246,0.1)]">
+<a class="flex flex-col items-center justify-center text-slate-500 px-6 py-2 hover:bg-slate-800/50 scale-98 duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined text-blue-300">schedule</span>
+<span class="font-['Manrope'] text-[12px] font-medium mt-1">Dijital</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-900/30 text-blue-300 rounded-full px-6 py-2 scale-98 duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined text-blue-300">watch_later</span>
+<span class="font-['Manrope'] text-[12px] font-medium mt-1">Analog</span>
+</a>
+</nav>
+</body></html>
